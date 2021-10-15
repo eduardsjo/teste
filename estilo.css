@@ -1,0 +1,68 @@
+/* WhatsApp Button */
+
+.whatsApp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    left:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+.my-whatsApp{
+    margin-top:16px;
+}
+body {
+    font-family: 'Montserrat', sans-serif;    
+}
+
+.nav-item {
+    margin: 0 20px;
+}
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+.bg-black {
+    background-color: #000000 
+}
+
+a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
+    background-color: #000000 
+}
+
+.grad1 {
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(to right, gray,white);
+}
+
+
+.grad2, a.grad2 {
+    color: #000000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to right, white,gray);
+}
