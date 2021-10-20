@@ -12,7 +12,11 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
           <link rel="stylesheet" href="estilo.css" >
 <script type="text/javascript" src="funcoes.js">
-
+    document.addEventListener("DOMContentLoaded", function () {
+	// add padding top to show content behind navbar
+	navbar_height = document.querySelector('.navbar.fixed-top').offsetHeight;
+	document.body.style.paddingTop = navbar_height + 'px';
+});
 </script>
       </head>
       <body> 

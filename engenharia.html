@@ -14,7 +14,11 @@
                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
 
 <script type="text/javascript" src="funcoes.js">
-
+    document.addEventListener("DOMContentLoaded", function () {
+	// add padding top to show content behind navbar
+	navbar_height = document.querySelector('.navbar.fixed-top').offsetHeight;
+	document.body.style.paddingTop = navbar_height + 'px';
+});
 </script>
       </head>
       <body> 
