@@ -65,4 +65,17 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
     padding-top: 20px;
     padding-bottom: 20px;
     background-image: linear-gradient(to right, white,gray);
+    /*position: absolute;*/
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
+
+.fotoZoom {
+    transition: all 1s ease;
+   
+}
+    .fotoZoom:hover {
+        transform: scale(1.20);
+        position: relative;
+    }
