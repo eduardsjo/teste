@@ -11,15 +11,54 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,800" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
           <link rel="stylesheet" href="estilo.css" >
+         
                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
-
 <script type="text/javascript" src="funcoes.js">
-    document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("DOMContentLoaded", function () {
 	// add padding top to show content behind navbar
 	navbar_height = document.querySelector('.navbar.fixed-top').offsetHeight;
 	document.body.style.paddingTop = navbar_height + 'px';
 });
+
+
+    /* modal imagens*/
+var dvContent = document.getElementById("dvContent");
+var dvModal = document.getElementById("dvModal");
+dvModal.setAttribute("onclick", "CloseModal();");
+
+
+SetAllImages();
+function SetAllImages() {
+	var images = document.getElementsByTagName("img");
+	for (var i = 0; i < images.length; i++) {
+		var img = images[i].getAttribute("src");
+		images[i].setAttribute("onclick", "OpenModal('" + img + "', '" + images[i].alt + "')");
+	}
+}
+
+
+function OpenModal(src, alt) {
+	dvContent.innerHTML = "";
+
+	var img = document.createElement("img");
+	img.src = src;
+	img.alt = alt;
+
+	var p = document.createElement("p");
+	p.innerText = alt;
+
+	dvContent.appendChild(img);
+	dvContent.appendChild(p);
+
+	dvModal.style.display = "block";
+}
+
+function CloseModal() {
+	dvModal.style.display = "none";
+}
+
 </script>
+
       </head>
       <body> 
           
@@ -119,11 +158,12 @@
      </div>
           -->
  
-  <div  class="grad1 grad1 shadow-lg p-3 mb-5" >
+  <div  class="grad1 grad1 shadow p-3 mb-2" >
       <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Engenharia</h2>
    </div>
           <div class="row justify-content-center w-100">
           <div class="w-75">
+              <br />
       <div class="entry-content">
           <br />
           <ul>
@@ -175,7 +215,308 @@
           
       </div>
       </div>
+
+             <div class="w-75">
+                  <div class="entry-content">
+                                        
+                      <br />
+
+                  </div>
+
+                  <div class="row">
+                      <div class="col-md-3  text-center">
+                          <div class="img-thumbnail fotoZoom">
+                              <img src="images/engenharia/Esboco1.jpg" alt="Lights" style="width:97%">
+                              <div class="caption">
+                                  <p></p>
+                                  <p>Esboço</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-3 text-center">
+                          <div class="img-thumbnail fotoZoom">
+                              <img src="images/engenharia/Esboco2.jpg" alt="Lights" style="width:97%">
+                              <div class="caption">
+                                  <p></p>
+                                  <p>Esboço</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-3 text-center">
+                          <div class="img-thumbnail fotoZoom">
+                              <img src="images/engenharia/Vegetal1.jpg" alt="Lights" style="width:97%">
+                              <div class="caption">
+                                  <p></p>
+                                  <p>Vegetal</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-3 text-center">
+                          <div class="img-thumbnail fotoZoom">
+                              <img src="images/engenharia/Vegetal2.jpg" alt="Lights" style="width:97%">
+                              <div class="caption">
+                                  <p></p>
+                                  <p>Detalhamento</p>
+                              </div>
+                          </div>
+                      </div>
+
+                      <br />
+                  </div>
+                  <div class="row">
+                      <p><br /></p>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-4 text-center">
+                          <div class="img-thumbnail">
+                              <img src="images/engenharia/1.jpg"  class="imagePop" style="width:99%">
+                              <div class="caption">
+                                  <p></p>
+                                  <p></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4  text-center">
+                          <div class="img-thumbnail">
+                              <img src="images/engenharia/2.jpg"  class="imagePop" style="width:99%">
+                              <div class="caption">
+                                  <p></p>
+                                  <p></p>
+                              </div>
+                          </div>
+                      </div>
+                      <br />
+                      <div class="col-md-4 text-center">
+                           <div class="img-thumbnail">
+    
+                              <img src="images/engenharia/3.jpg" alt="Pórtico" class="imagePop" style="width:99%">
+                              <div class="caption">
+                                  <p></p>
+                                  <p></p>
+                              </div>
+                          
+                          </div>
+                      </div>
+                     
+
+                  </div>
+
+                  <div class="row">
+                      <p><br /></p>
+                  </div>
+
+                 <div class="row">
+                      <div class="col-md-4 text-center">
+                          <div class="img-thumbnail">
+                              <img src="images/engenharia/4.jpg"  class="imagePop" style="width:99%">
+                              <div class="caption">
+                                  <p></p>
+                                  <p></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4  text-center">
+                          <div class="img-thumbnail">
+                              <img src="images/engenharia/5.jpg"  class="imagePop" style="width:99%">
+                              <div class="caption">
+                                  <p></p>
+                                  <p></p>
+                              </div>
+                          </div>
+                      </div>
+                      <br />
+                      <div class="col-md-4 text-center">
+                           <div class="img-thumbnail">
+                                  <img src="images/engenharia/6.jpg" class="imagePop" style="width:99%">
+                              <div class="caption">
+                                  <p></p>
+                                  <p></p>
+                              </div>
+                          
+                          </div>
+                      </div>
+                     
+
+                  </div>
+                  <div class="row">
+                      <p><br /></p>
+                  </div>
+                <div class="row">
+                      <div class="col-md-4 text-center">
+                          <div class="img-thumbnail">
+                              <img src="images/engenharia/7.jpg"  class="imagePop" style="width:99%">
+                              <div class="caption">
+                                  <p></p>
+                                  <p></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4  text-center">
+                          <div class="img-thumbnail">
+                              <img src="images/engenharia/8.jpg"  class="imagePop" style="width:99%">
+                              <div class="caption">
+                                  <p></p>
+                                  <p></p>
+                              </div>
+                          </div>
+                      </div>
+                      <br />
+                      <div class="col-md-4 text-center">
+                           <div class="img-thumbnail">
+    
+
+                              <img src="images/engenharia/9.jpg" class="imagePop" style="width:99%">
+                              <div class="caption">
+                                  <p></p>
+                                  <p></p>
+                              </div>
+                          
+                          </div>
+                      </div>
+                     
+
+                  </div>
+                  <div class="row">
+                      <p><br /></p>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-4 text-center">
+                          <div class="img-thumbnail">
+                              <img src="images/engenharia/10.jpg"  class="imagePop" style="width:99%">
+                              <div class="caption">
+                                  <p></p>
+                                  <p></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4  text-center">
+                          <div class="img-thumbnail">
+                              <img src="images/engenharia/11.jpg"  class="imagePop" style="width:99%">
+                              <div class="caption">
+                                  <p></p>
+                                  <p></p>
+                              </div>
+                          </div>
+                      </div>
+                      <br />
+                      <div class="col-md-4 text-center">
+                           <div class="img-thumbnail">
+    
+
+                              <img src="images/engenharia/12.jpg" class="imagePop" style="width:99%">
+                              <div class="caption">
+                                  <p></p>
+                                  <p></p>
+                              </div>
+                          
+                          </div>
+                      </div>
+                     
+
+                  </div>
+                  <div class="row">
+                      <p><br /></p>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-4 text-center">
+                          <div class="img-thumbnail">
+                              <img src="images/engenharia/13.jpg"  class="imagePop" style="width:99%">
+                              <div class="caption">
+                                  <p></p>
+                                  <p></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4  text-center">
+                          <div class="img-thumbnail">
+                              <img src="images/engenharia/14.jpg"  class="imagePop" style="width:99%">
+                              <div class="caption">
+                                  <p></p>
+                                  <p></p>
+                              </div>
+                          </div>
+                      </div>
+                      <br />
+                      <div class="col-md-4 text-center">
+                           <div class="img-thumbnail">
+    
+
+                              <img src="images/engenharia/15.jpg"  class="imagePop" class="imagePop" style="width:99%">
+                              <div class="caption">
+                                  <p></p>
+                                  <p></p>
+                              </div>
+                          
+                          </div>
+                      </div>
+                     
+
+                  </div>
+
+                  <div class="row">
+                      <p><br /></p>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-4 text-center">
+                          <div class="img-thumbnail">
+                              <img src="images/engenharia/16.jpg"  class="imagePop" style="width:99%">
+                              <div class="caption">
+                                  <p></p>
+                                  <p></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4  text-center">
+                          <div class="img-thumbnail">
+                              <img src="images/engenharia/17.jpg"  class="imagePop" style="width:99%">
+                              <div class="caption">
+                                  <p></p>
+                                  <p></p>
+                              </div>
+                          </div>
+                      </div>
+                      <br />
+                      <div class="col-md-4 text-center">
+                           <div class="img-thumbnail">
+    
+
+                              <img src="images/engenharia/18.jpg"  class="imagePop" class="imagePop" style="width:99%">
+                              <div class="caption">
+                                  <p></p>
+                                  <p></p>
+                              </div>
+                          
+                          </div>
+                      </div>
+                     
+
+                  </div>
+              
+                  <div class="row">
+                      <p><br /></p>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-4 text-center">
+                          <div class="img-thumbnail">
+                              <img src="images/engenharia/19.jpg"  class="imagePop" style="width:99%">
+                              <div class="caption">
+                                  <p></p>
+                                  <p></p>
+                              </div>
+                          </div>
+                      </div>
+                     
+                      <br />
+                      
+                     
+
+                  </div>
+                  <div class="row">
+                      <p><br /></p>
+                  </div>
+
 </div>
+
 
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -193,5 +534,17 @@
             
           </div>         
       </div>
+
+ <!-- Image On FullScreen with Modal  -->
+ 
+ <div id="dvModal">
+      <div id="dvContent">
+        <img src="img/re03.jpg" alt="Image 03" />
+        <p id="imageTitle">Title here</p>
+      </div>
+    </div>
+
+ <script src="modal.js"></script>
+
 </body>
     </html>
