@@ -148,6 +148,14 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
     position: relative;
     height: 200px; /*should be the same height as the images*/
 }
+.img-comp-containerCat {
+    position: relative;
+    height: 462px; /*should be the same height as the images*/
+}
+.img-comp-containerCat2 {
+    position: relative;
+    height: 469px; /*should be the same height as the images*/
+}
 
 .img-comp-img {
     position: absolute;
